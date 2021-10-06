@@ -25,13 +25,13 @@ body {
   text-decoration: none;
 }
 
-.main-container {
+.start-container {
   text-align: center;
   margin-top: 20px;
   padding-top: 50px;
 }
 
-.main-container p {
+.start-container p {
   margin-bottom: 40px;
 }
 
