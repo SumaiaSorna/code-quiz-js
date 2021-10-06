@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Code Quiz</title>
   </head>
   <body>
+    <!-- header -->
     <header class="flex-container">
       <!-- div for the nav bar -->
       <div class="flex-item">
@@ -16,7 +24,8 @@
 
       <div class="flex-item">Time:<span>0</span></div>
     </header>
-    <main>
+    <!-- main -->
+    <main id="start-container">
       <div class="main-container">
         <h1>Coding Quiz Challenge</h1>
         <p>
@@ -25,7 +34,7 @@
           time by ten seconds!
         </p>
         <div>
-          <button>Star Quiz</button>
+          <button class="btn" id="start-btn">Start Quiz</button>
         </div>
       </div>
     </main>

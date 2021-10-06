@@ -2,11 +2,23 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 2rem;
 }
 
 .flex-item a {
@@ -16,6 +28,29 @@
 .main-container {
   text-align: center;
   margin-top: 20px;
+  padding-top: 50px;
+}
+/* CSS button generator */
+.btn {
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color: #c62d1f;
+  border-radius: 20px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 21px;
+  padding: 10px 35px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color: #460905;
+}
+.btn:active {
+  position: relative;
+  top: 2px;
 }
 
 @media screen and (max-width: 576px) {
