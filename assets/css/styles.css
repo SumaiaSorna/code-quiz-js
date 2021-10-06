@@ -30,6 +30,10 @@ body {
   margin-top: 20px;
   padding-top: 50px;
 }
+
+.main-container p {
+  margin-bottom: 40px;
+}
 /* CSS button generator */
 .btn {
   box-shadow: 3px 4px 0px 0px #8a2a21;
