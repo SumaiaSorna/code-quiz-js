@@ -57,10 +57,13 @@ body {
   font-weight: 400;
 }
 
-.start-container {
-  text-align: center;
+.container {
   margin: 0 2rem;
   padding: 4rem;
+}
+
+.start-container {
+  text-align: center;
 }
 
 /* CSS button generator */
@@ -73,22 +76,57 @@ body {
   display: inline-block;
   cursor: pointer;
   color: var(--blue-sapphire);
-
   font-size: 1rem;
   padding: 10px 35px;
   text-decoration: none;
   letter-spacing: 0.2rem;
   font-weight: 600;
 }
+
 .btn:hover {
   background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
   background-color: #460905;
   cursor: pointer;
   color: var(--gamboge);
 }
+
 .btn:active {
   position: relative;
   top: 2px;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.question-container {
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+
+.option-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--blue-sapphire);
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.option-item:hover {
+  background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color: #460905;
+  cursor: pointer;
+  color: var(--gamboge);
 }
 
 @media screen and (max-width: 576px) {
@@ -97,7 +135,7 @@ body {
     align-items: center;
   }
 
-  .start-container {
+  .container {
     margin: 0 1rem;
     padding: 2rem;
   }
