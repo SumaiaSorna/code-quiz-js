@@ -48,54 +48,57 @@ body {
   color: var(--gamboge);
 }
 
-/* .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem;
+.main {
+  font-size: 1rem;
 }
 
-.flex-item a {
-  text-decoration: none;
+.title {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .start-container {
   text-align: center;
-  margin-top: 20px;
-  padding-top: 50px;
-}
-
-.start-container p {
-  margin-bottom: 40px;
+  margin: 0 2rem;
+  padding: 4rem;
 }
 
 /* CSS button generator */
-/* .btn {
-  box-shadow: 3px 4px 0px 0px #8a2a21;
+.btn {
+  box-shadow: 3px 4px 0px 0px #f7584a;
   background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-  background-color: #c62d1f;
+  background-color: var(--gamboge);
   border-radius: 20px;
-  border: 1px solid #d02718;
+  border: 1px solid hsl(5, 79%, 45%);
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  font-size: 21px;
+  color: var(--blue-sapphire);
+
+  font-size: 1rem;
   padding: 10px 35px;
   text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
 }
 .btn:hover {
   background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
   background-color: #460905;
+  cursor: pointer;
+  color: var(--gamboge);
 }
 .btn:active {
   position: relative;
   top: 2px;
-} */
+}
 
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .start-container {
+    margin: 0 1rem;
+    padding: 2rem;
   }
 }
