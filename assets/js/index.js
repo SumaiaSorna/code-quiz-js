@@ -87,14 +87,22 @@ const removeStartContainer = function () {
   startContainer.remove();
 };
 
+const startTimer = function () {
+  // declare the timer
+  const timer = setInterval(timerTick, 1000);
+  // declare the timer tick function
+  //......................................................................
+};
 // function to execute when start button is called
 const startQuiz = function () {
-  console.log("startQuiz");
   // remove start container
   removeStartContainer();
 
   // render question container
   renderQuestionContainer();
+
+  // start timer
+  starTimer();
 };
 
 // target the start quiz button
