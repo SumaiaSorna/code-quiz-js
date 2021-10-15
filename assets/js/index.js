@@ -21,6 +21,8 @@ const codeQuestions = [
   },
 ];
 
+let count = codeQuestions.length * 5;
+
 const constructOptions = function (options) {
   const optionContainer = document.createElement("div");
   optionContainer.setAttribute("class", "options-container");
@@ -88,11 +90,25 @@ const removeStartContainer = function () {
 };
 
 const startTimer = function () {
+  // declare the timer tick function
+  const timerTick = function () {
+    console.log("tick");
+    // check if the countdown has reached 0
+    if (count >= 0) {
+      // render the countdown time in the document
+
+      document.getElementById("countdown").textContent = count;
+      count -= 1;
+    } else {
+      // render game over container
+      console.log("GAME OVER");
+      clearInterval(timer);
+    }
+  };
   // declare the timer
   const timer = setInterval(timerTick, 1000);
-  // declare the timer tick function
-  //......................................................................
 };
+
 // function to execute when start button is called
 const startQuiz = function () {
   // remove start container
@@ -102,7 +118,7 @@ const startQuiz = function () {
   renderQuestionContainer();
 
   // start timer
-  starTimer();
+  startTimer();
 };
 
 // target the start quiz button
