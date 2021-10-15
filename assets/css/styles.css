@@ -159,6 +159,7 @@ body {
   text-align: center;
   background-color: var(--blue-sapphire);
   color: var(--gamboge);
+  margin-top: 4rem;
 }
 
 .form-container {
