@@ -21,6 +21,26 @@ const codeQuestions = [
   },
 ];
 
+const constructOptions = function (options) {
+  const optionContainer = document.createElement("div");
+  optionContainer.setAttribute("class", "options-container");
+
+  for (let i = 0; i < options.length; i++) {
+    // get the current option from array
+    const option = options[i];
+
+    // create my button
+    const optionButton = document.createElement("button");
+    optionButton.setAttribute("class", "option-item");
+    optionButton.textContent = option;
+
+    // append to optionsContainer
+    optionContainer.appendChild(optionButton);
+  }
+
+  return optionContainer;
+};
+
 const constructQuestionContainer = function (question) {
   console.log(question);
 
@@ -28,11 +48,21 @@ const constructQuestionContainer = function (question) {
 
   const questionContainer = document.createElement("div");
   questionContainer.setAttribute("class", "container question-container");
-  console.log(questionContainer);
 
   // construct h2 element
 
+  const questionH2 = document.createElement("h2");
+  questionH2.setAttribute("class", "question");
+  questionH2.textContent = question.title;
+
   // construct options div
+  const options = constructOptions(question.options);
+  console.log(options);
+
+  // appending h2 and options div to container div
+
+  questionContainer.append(questionH2, options);
+  return questionContainer;
 };
 
 //  render question container
@@ -43,8 +73,9 @@ const renderQuestionContainer = function () {
   const currentQuestion = codeQuestions[0];
 
   // construct the HTML for the question container
-  constructQuestionContainer(currentQuestion);
+  const questionContainer = constructQuestionContainer(currentQuestion);
   // append the container to the document
+  document.getElementById("main-container").appendChild(questionContainer);
 };
 
 const removeStartContainer = function () {
