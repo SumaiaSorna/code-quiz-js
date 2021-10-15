@@ -21,9 +21,9 @@ const codeQuestions = [
   },
 ];
 
-//let count = codeQuestions.length * 5;
-let count = 5;
 let currentQuestionIndex = 0;
+let count = codeQuestions.length * 5;
+//let count = 5;
 
 const constructOptions = function (options) {
   const optionContainer = document.createElement("div");
@@ -169,6 +169,7 @@ const verifyAnswer = function (event) {
     if (userOption !== correctOption) {
       // time penalty deduct 5 seconds
       count -= 5;
+      document.getElementById("countdown").textContent = count;
       renderDangerAlert();
     } else {
       console.log("CORRECT");
@@ -263,8 +264,8 @@ const startTimer = function () {
       removeQuestionContainer();
       renderGameOver();
     } else {
-      document.getElementById("countdown").textContent = count;
       count -= 1;
+      document.getElementById("countdown").textContent = count;
     }
   };
   // declare the timer
