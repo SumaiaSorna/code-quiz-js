@@ -184,6 +184,24 @@ body {
   margin-top: 4rem;
 }
 
+.highscores-list {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.highscore-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--gamboge);
+  margin-bottom: 0.2rem;
+}
+
+.highscore-container:hover {
+  background-color: var(--medium-champagne);
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
