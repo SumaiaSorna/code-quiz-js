@@ -87,6 +87,8 @@ body {
   text-decoration: none;
   letter-spacing: 0.2rem;
   font-weight: 600;
+  min-width: 200px;
+  margin-bottom: 1rem;
 }
 
 .btn:hover {
@@ -200,6 +202,12 @@ body {
 
 .highscore-container:hover {
   background-color: var(--medium-champagne);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 576px) {
