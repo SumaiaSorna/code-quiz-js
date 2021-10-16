@@ -1,6 +1,6 @@
 const codeQuestions = [
   {
-    title: "The # symbol specifies that the selector is?",
+    title: "This '#' symbol represents-",
     options: ["class", "tag", "first", "id"],
     correctOption: "id",
   },
