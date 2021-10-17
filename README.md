@@ -20,17 +20,9 @@ You can view the GitHub page deployed application [here](https://sumaiasorna.git
 
 ![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Home.png)
 
-#### Question 1
+#### Question 1 (Sample 1 of 3)
 
 ![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Question1.png)
-
-#### Question 2
-
-![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Question2.png)
-
-#### Question 3
-
-![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Question3.png)
 
 #### Score page
 
@@ -43,3 +35,7 @@ You can view the GitHub page deployed application [here](https://sumaiasorna.git
 #### High score
 
 ![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Highscores.png)
+
+#### Game Over
+
+![Code Quiz screenshots are here!](./assets/screenshots/Code-Quiz-Game-Over.png)
