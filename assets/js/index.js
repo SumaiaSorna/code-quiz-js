@@ -23,7 +23,6 @@ const codeQuestions = [
 
 let currentQuestionIndex = 0;
 let count = codeQuestions.length * 5;
-//let count = 5;
 
 const constructOptions = function (options) {
   const optionContainer = document.createElement("div");
