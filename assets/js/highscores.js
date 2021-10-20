@@ -12,7 +12,7 @@ const renderHighscores = function (highscores) {
   // construct ul
   const ulElement = document.createElement("ul");
   ulElement.setAttribute("class", "highscores-list");
-  ulElement.setAttribute("class", "highscores-list");
+  ulElement.setAttribute("id", "highscores-list");
 
   for (let i = 0; i < highscores.length; i++) {
     // get current highscore
